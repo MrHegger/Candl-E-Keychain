@@ -55,13 +55,19 @@ https://beta.womp.com/preview/l16ip302v2di4zah
 
 ## 🚀 Getting Started
 
-1. Flash the code to the **XIAO ESP32-C3** using Arduino IDE.  
-2. Install required libraries:  
+1. Download and Install the latest version of Arduino IDE according to your operating system
+2. Add ESP32 board package to your Arduino IDE
+Navigate to File > Preferences, and fill "Additional Boards Manager URLs" with the url below: https://jihulab.com/esp-mirror/espressif/arduino-esp32.git
+Navigate to Tools > Board > Boards Manager..., type the keyword "esp32" in the search box, select the latest version of esp32, and install it.
+4. Select your board and port
+Navigate to Tools > Board > ESP32 Arduino and select "XIAO_ESP32C3". The list of board is a little long and you need to roll to the buttom to reach it.
+Navigate to Tools > Port and select the serial port name of the connected XIAO ESP32C3. This is likely to be COM3 or higher (COM1 and COM2 are usually reserved for hardware serial ports).
+6. Install required libraries:  
    - `Adafruit_GFX`  
    - `Adafruit_SSD1306`  
-3. Wire up the SSD1306 display and battery.  
-4. Upload the bitmap frames (`media.h`).  
-5. Power on and tap the button—enjoy your pocket flame!
+7. Wire up the SSD1306 display and battery.  
+8. Flash the code to the **XIAO ESP32-C3** using Arduino IDE.
+9. Power on and tap the button—enjoy your pocket flame!
 
 ---
 
